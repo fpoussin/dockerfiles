@@ -8,6 +8,3 @@ RUN apt-get -qq install software-properties-common
 RUN add-apt-repository -y ppa:fpoussin/ppa
 RUN apt-get -qq install libqt5usb5 libqt5usb5-dev
 RUN apt-get autoclean
-
-EXPOSE 22
-CMD /usr/sbin/sshd -D
